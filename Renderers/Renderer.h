@@ -5,6 +5,7 @@
 #ifndef UIP_RENDERER_H
 #define UIP_RENDERER_H
 
+#include "Helpers.h"
 
 class Renderer {
 
