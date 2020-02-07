@@ -2,8 +2,8 @@
 // Created by Dojitza on 7.9.2019..
 //
 
-#ifndef UIP_RENDERER_H
-#define UIP_RENDERER_H
+#ifndef UIP_RENDERER_HPP
+#define UIP_RENDERER_HPP
 
 #include "Helpers.h"
 
@@ -32,9 +32,9 @@ public:
      * Draws a sphere using a center point and radius length
      * @return
      */
-    virtual status_t drawSphere(Point3d center, length_t length) = 0;
+    virtual status_t drawSphere(Point3d center, length_t radius) = 0;
 
 };
 
 
-#endif //UIP_RENDERER_H
+#endif //UIP_RENDERER_HPP

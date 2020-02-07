@@ -2,10 +2,10 @@
 // Created by Dojitza on 7.9.2019..
 //
 
-#ifndef UIP_COMMANDLINERENDERER_H
-#define UIP_COMMANDLINERENDERER_H
+#ifndef UIP_COMMANDLINERENDERER_HPP
+#define UIP_COMMANDLINERENDERER_HPP
 
-#include "Renderer.h"
+#include "Renderer.hpp"
 
 class CommandLineRenderer : public Renderer
 {
@@ -14,7 +14,7 @@ public:
 
     status_t drawPoint(Point3d point) override;
 
-    status_t drawSphere(Point3d center, length_t length) override;
+    status_t drawSphere(Point3d center, length_t radius) override;
 };
 
-#endif //UIP_COMMANDLINERENDERER_H
+#endif //UIP_COMMANDLINERENDERER_HPP

@@ -2,7 +2,7 @@
 // Created by Dojitza on 7.9.2019..
 //
 
-#include "Renderer.h"
+#include "Renderer.hpp"
 
 status_t Renderer::drawCuboid(Point3d point1, Point3d point2, Point3d point3)
 {
