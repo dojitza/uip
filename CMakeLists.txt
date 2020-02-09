@@ -13,11 +13,15 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
 
 set(SOURCE_FILES
         Renderers/Renderer.cpp
-        Renderers/CommandLineRenderer/CommandLineRenderer.cpp)
+        Renderers/CommandLineRenderer/CommandLineRenderer.cpp
+        Renderers/SDL2Renderer/SDL2Renderer.cpp)
 
 set(INCLUDE_FOLDERS
         Renderers
-        Renderers/CommandLineRenderer Helpers)
+        Renderers/CommandLineRenderer
+        Renderers/SDL2Renderer
+        Helpers)
+
 
 include_directories(${INCLUDE_FOLDERS})
 add_executable(uip main.cpp ${SOURCE_FILES})
