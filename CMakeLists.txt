@@ -15,20 +15,7 @@ set(CMAKE_PREFIX_PATH
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
 
-set(SOURCE_FILES
-        src/Renderers/Renderer.cpp
-        src/Renderers/CommandLineRenderer/CommandLineRenderer.cpp
-        src/Renderers/SDL2Renderer/SDL2Renderer.cpp)
-
-set(INCLUDE_FOLDERS
-        src/Renderers
-        src/Renderers/CommandLineRenderer
-        src/Renderers/SDL2Renderer
-        src/Helpers)
-
-
-include_directories(${INCLUDE_FOLDERS})
-add_executable(uip src/main.cpp ${SOURCE_FILES})
+add_executable(uip src/main.cpp)
 
 find_package(SDL2 REQUIRED)
 

@@ -1,7 +1,3 @@
-#include <iostream>
-#include "CommandLineRenderer.hpp"
-#include "Renderer.hpp"
-#include <vector>
 #include <SDL.h>
 #include <stdio.h>
 
@@ -10,12 +6,6 @@ const int SCREEN_WIDTH = 640;
 const int SCREEN_HEIGHT = 480;
 
 int main(int argc, char* args[]) {
-    Renderer *renderer = new CommandLineRenderer();
-    std::vector<Point3d> points;
-    for(int i=0; i<10; ++i){
-        points.push_back({i,i*2,0});
-        renderer->drawLine(points[0], points[i]);
-    }
 
     //The window we'll be rendering to
     SDL_Window* window = NULL;
